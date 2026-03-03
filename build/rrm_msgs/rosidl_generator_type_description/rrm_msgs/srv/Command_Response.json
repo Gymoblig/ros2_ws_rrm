@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "rrm_msgs/srv/Command_Response",
+      "fields": [
+        {
+          "name": "result_code",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "message",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "rrm_msgs/srv/Command_Response",
+      "hash_string": "RIHS01_6f4f42d9273fec70eea743a4f6bd5ddcec7c15e7a655fc39ef75a5a8083a6729"
+    }
+  ]
+}

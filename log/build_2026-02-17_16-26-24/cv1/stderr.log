@@ -1,0 +1,14 @@
+[01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:13:35:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+   13 |         if (input == 'w' || [01;35m[Kinput == "W"[m[K) terminator.move(0, 1);
+      |                             [01;35m[K~~~~~~^~~~~~[m[K
+[01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:13:35:[m[K [01;31m[Kerror: [m[KISO C++ forbids comparison between pointer and integer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:5:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    5 | int main([01;35m[Kint argc[m[K, char ** argv) {
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:5:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    5 | int main(int argc, [01;35m[Kchar ** argv[m[K) {
+      |                    [01;35m[K~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/cv1_node.dir/build.make:76: CMakeFiles/cv1_node.dir/src/cv1_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cv1_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

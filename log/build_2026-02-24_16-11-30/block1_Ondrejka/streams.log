@@ -1,0 +1,11 @@
+[0.011s] Invoking command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16
+[0.084s] [ 25%] [32mBuilding CXX object CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o[0m
+[0.087s] [ 75%] Built target logger_node
+[0.246s] [01m[K/home/greeny/ros2_ws_rrm/src/block1_Ondrejka/src/teleop_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joint_state.hpp: No such file or directory
+[0.246s]     3 | #include [01;31m[K"sensor_msgs/msg/joint_state.hpp"[m[K
+[0.246s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.246s] compilation terminated.
+[0.252s] gmake[2]: *** [CMakeFiles/teleop_node.dir/build.make:76: CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o] Error 1
+[0.253s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/teleop_node.dir/all] Error 2
+[0.253s] gmake: *** [Makefile:146: all] Error 2
+[0.255s] Invoked command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka' returned '2': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16

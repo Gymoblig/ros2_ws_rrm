@@ -1,0 +1,47 @@
+[0.014s] Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/greeny/ros2_ws_rrm/src/cv2/rrm_simple_robot_model -DCMAKE_INSTALL_PREFIX=/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model
+[0.118s] -- The C compiler identification is GNU 13.3.0
+[0.200s] -- The CXX compiler identification is GNU 13.3.0
+[0.218s] -- Detecting C compiler ABI info
+[0.301s] -- Detecting C compiler ABI info - done
+[0.311s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.311s] -- Detecting C compile features
+[0.312s] -- Detecting C compile features - done
+[0.322s] -- Detecting CXX compiler ABI info
+[0.417s] -- Detecting CXX compiler ABI info - done
+[0.426s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.427s] -- Detecting CXX compile features
+[0.427s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.550s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.658s] -- Found rviz2: 14.1.19 (/opt/ros/jazzy/share/rviz2/cmake)
+[0.738s] -- Configuring done (0.7s)
+[0.739s] -- Generating done (0.0s)
+[0.741s] -- Build files have been written to: /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model
+[0.748s] Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/greeny/ros2_ws_rrm/src/cv2/rrm_simple_robot_model -DCMAKE_INSTALL_PREFIX=/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model
+[0.748s] Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model -- -j16 -l16
+[0.778s] Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model -- -j16 -l16
+[0.779s] Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model
+[0.785s] -- Install configuration: ""
+[0.785s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/urdf
+[0.785s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/urdf/arm.urdf
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/config
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/config/rrm_cv3.rviz
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/launch
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/launch/robot_state_publisher.launch.py
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/launch/robot_state_publisher.launch.xml
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/ament_index/resource_index/package_run_dependencies/rrm_simple_robot_model
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/ament_index/resource_index/parent_prefix_path/rrm_simple_robot_model
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/ament_prefix_path.sh
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/ament_prefix_path.dsv
+[0.786s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/path.sh
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/path.dsv
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.bash
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.sh
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.zsh
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.dsv
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.dsv
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/ament_index/resource_index/packages/rrm_simple_robot_model
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/cmake/rrm_simple_robot_modelConfig.cmake
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/cmake/rrm_simple_robot_modelConfig-version.cmake
+[0.787s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.xml
+[0.788s] Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model

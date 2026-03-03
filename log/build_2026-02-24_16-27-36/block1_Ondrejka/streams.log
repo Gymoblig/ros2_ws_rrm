@@ -1,0 +1,11 @@
+[0.012s] Invoking command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16
+[0.084s] [ 50%] Built target logger_node
+[0.086s] [ 75%] [32mBuilding CXX object CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o[0m
+[1.542s] [01m[K/home/greeny/ros2_ws_rrm/src/block1_Ondrejka/src/teleop_node.cpp:[m[K In member function ‘[01m[Kvoid Teleop::[01;32m[Khandle_input[m[K(char)[m[K’:
+[1.542s] [01m[K/home/greeny/ros2_ws_rrm/src/block1_Ondrejka/src/teleop_node.cpp:41:73:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.543s]    41 |       case 'x': std::cout << "Quitting program..." << std::endl; return [01;31m[Kfalse[m[K;
+[1.543s]       |                                                                         [01;31m[K^~~~~[m[K
+[2.201s] gmake[2]: *** [CMakeFiles/teleop_node.dir/build.make:76: CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o] Error 1
+[2.201s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/teleop_node.dir/all] Error 2
+[2.202s] gmake: *** [Makefile:146: all] Error 2
+[2.204s] Invoked command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka' returned '2': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16

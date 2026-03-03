@@ -1,0 +1,27 @@
+[0.014s] Invoking command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16
+[0.082s] [ 50%] Built target logger_node
+[0.087s] [ 75%] [32mBuilding CXX object CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o[0m
+[2.972s] [100%] [32m[1mLinking CXX executable teleop_node[0m
+[3.126s] [100%] Built target teleop_node
+[3.135s] Invoked command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16
+[3.136s] Invoking command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/block1_Ondrejka
+[3.143s] -- Install configuration: ""
+[3.143s] -- Installing: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/teleop_node
+[3.144s] -- Set non-toolchain portion of runtime path of "/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/teleop_node" to ""
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/logger_node
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/package_run_dependencies/block1_Ondrejka
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/parent_prefix_path/block1_Ondrejka
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/ament_prefix_path.sh
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/ament_prefix_path.dsv
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/path.sh
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/path.dsv
+[3.145s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.bash
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.sh
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.zsh
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.dsv
+[3.146s] -- Installing: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.dsv
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/packages/block1_Ondrejka
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/cmake/block1_OndrejkaConfig.cmake
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/cmake/block1_OndrejkaConfig-version.cmake
+[3.146s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.xml
+[3.148s] Invoked command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/block1_Ondrejka

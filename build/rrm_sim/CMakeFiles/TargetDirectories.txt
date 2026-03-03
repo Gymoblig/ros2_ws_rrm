@@ -1,0 +1,10 @@
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/uninstall.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/rrm_sim_uninstall.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/robot_sim_node.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/test.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/edit_cache.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/rebuild_cache.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/list_install_components.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/install.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/install/local.dir
+/home/greeny/ros2_ws_rrm/build/rrm_sim/CMakeFiles/install/strip.dir

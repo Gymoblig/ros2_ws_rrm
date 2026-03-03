@@ -1,0 +1,10 @@
+[0.010s] Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[0.060s] [ 33%] [32mBuilding CXX object CMakeFiles/cv1_node.dir/src/robot.cpp.o[0m
+[0.066s] In file included from [01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/robot.cpp:1[m[K:
+[0.067s] [01m[K/home/greeny/ros2_ws_rrm/src/cv1/include/cv1/robot.hpp:15:2:[m[K [01;31m[Kerror: [m[K#endif without #if
+[0.067s]    15 | #[01;31m[Kendif[m[K
+[0.067s]       |  [01;31m[K^~~~~[m[K
+[0.068s] gmake[2]: *** [CMakeFiles/cv1_node.dir/build.make:90: CMakeFiles/cv1_node.dir/src/robot.cpp.o] Error 1
+[0.068s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cv1_node.dir/all] Error 2
+[0.068s] gmake: *** [Makefile:146: all] Error 2
+[0.070s] Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16

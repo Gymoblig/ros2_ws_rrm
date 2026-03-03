@@ -1,0 +1,35 @@
+[0.009s] Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[0.031s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.191s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.210s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.217s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.269s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.270s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.322s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.364s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.435s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.435s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/greeny/ros2_ws_rrm/src/cv1/include>
+[0.435s] -- Configured cppcheck exclude dirs and/or files: 
+[0.435s] -- Added test 'lint_cmake' to check CMake code style
+[0.436s] -- Added test 'uncrustify' to check C / C++ code style
+[0.436s] -- Configured uncrustify additional arguments: 
+[0.436s] -- Added test 'xmllint' to check XML markup files
+[0.436s] -- Configuring done (0.4s)
+[0.442s] -- Generating done (0.0s)
+[0.444s] -- Build files have been written to: /home/greeny/ros2_ws_rrm/build/cv1
+[0.480s] [ 33%] [32mBuilding CXX object CMakeFiles/cv1_node.dir/src/robot.cpp.o[0m
+[2.102s] [ 66%] [32m[1mLinking CXX executable cv1_node[0m
+[2.116s] /usr/bin/ld: CMakeFiles/cv1_node.dir/src/robot.cpp.o: in function `main':
+[2.116s] robot.cpp:(.text+0x0): multiple definition of `main'; CMakeFiles/cv1_node.dir/src/cv1_node.cpp.o:cv1_node.cpp:(.text+0x0): first defined here
+[2.168s] /usr/bin/ld: CMakeFiles/cv1_node.dir/src/robot.cpp.o: in function `main':
+[2.168s] robot.cpp:(.text+0xcb): undefined reference to `Robot::Robot()'
+[2.168s] /usr/bin/ld: robot.cpp:(.text+0x28f): undefined reference to `Robot::getCurrentPosition() const'
+[2.168s] /usr/bin/ld: robot.cpp:(.text+0x360): undefined reference to `Robot::move(double)'
+[2.168s] /usr/bin/ld: robot.cpp:(.text+0x524): undefined reference to `Robot::getCurrentPosition() const'
+[2.171s] collect2: error: ld returned 1 exit status
+[2.173s] gmake[2]: *** [CMakeFiles/cv1_node.dir/build.make:179: cv1_node] Error 1
+[2.173s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cv1_node.dir/all] Error 2
+[2.173s] gmake: *** [Makefile:146: all] Error 2
+[2.176s] Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16

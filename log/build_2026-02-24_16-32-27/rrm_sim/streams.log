@@ -1,0 +1,24 @@
+[0.016s] Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_sim': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_sim -- -j16 -l16
+[0.102s] [100%] Built target robot_sim_node
+[0.117s] Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_sim' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_sim -- -j16 -l16
+[0.118s] Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_sim': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_sim
+[0.125s] -- Install configuration: ""
+[0.126s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/lib/rrm_sim/robot_sim_node
+[0.126s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/launch
+[0.126s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/launch/rrm_sim.launch.xml
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/ament_index/resource_index/package_run_dependencies/rrm_sim
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/ament_index/resource_index/parent_prefix_path/rrm_sim
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/environment/ament_prefix_path.sh
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/environment/ament_prefix_path.dsv
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/environment/path.sh
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/environment/path.dsv
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/local_setup.bash
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/local_setup.sh
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/local_setup.zsh
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/local_setup.dsv
+[0.127s] -- Installing: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.dsv
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/ament_index/resource_index/packages/rrm_sim
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/cmake/rrm_simConfig.cmake
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/cmake/rrm_simConfig-version.cmake
+[0.127s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.xml
+[0.129s] Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_sim' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_sim

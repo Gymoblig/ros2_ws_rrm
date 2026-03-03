@@ -1,0 +1,4 @@
+source;share/block1_Ondrejka/local_setup.bash
+source;share/block1_Ondrejka/local_setup.dsv
+source;share/block1_Ondrejka/local_setup.sh
+source;share/block1_Ondrejka/local_setup.zsh

@@ -1,0 +1,41 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rviz2: 14.1.19 (/opt/ros/jazzy/share/rviz2/cmake)
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model
+-- Install configuration: ""
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/urdf
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/urdf/arm.urdf
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/config
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/config/rrm_cv3.rviz
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/launch
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/launch/robot_state_publisher.launch.py
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/launch/robot_state_publisher.launch.xml
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/ament_index/resource_index/package_run_dependencies/rrm_simple_robot_model
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/ament_index/resource_index/parent_prefix_path/rrm_simple_robot_model
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/ament_prefix_path.sh
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/ament_prefix_path.dsv
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/path.sh
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/environment/path.dsv
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.bash
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.sh
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.zsh
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/local_setup.dsv
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.dsv
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/ament_index/resource_index/packages/rrm_simple_robot_model
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/cmake/rrm_simple_robot_modelConfig.cmake
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/cmake/rrm_simple_robot_modelConfig-version.cmake
+-- Installing: /home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.xml

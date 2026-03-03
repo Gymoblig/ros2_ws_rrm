@@ -1,0 +1,467 @@
+[0.061s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.061s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72d0e9091af0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72d0e9091640>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72d0e9091640>>, mixin_verb=('build',))
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.084s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/greeny/ros2_ws_rrm'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extensions ['ignore', 'ignore_ament_install']
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'ignore'
+[0.100s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'ignore_ament_install'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extensions ['colcon_pkg']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'colcon_pkg'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extensions ['colcon_meta']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'colcon_meta'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extensions ['ros']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'ros'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extensions ['cmake', 'python']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'cmake'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'python'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extensions ['python_setup_py']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(rrm-zadania) by extension 'python_setup_py'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extension 'ignore'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extension 'ignore_ament_install'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extensions ['colcon_pkg']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extension 'colcon_pkg'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extensions ['colcon_meta']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extension 'colcon_meta'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extensions ['ros']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/block1_Ondrejka) by extension 'ros'
+[0.104s] DEBUG:colcon.colcon_core.package_identification:Package 'src/block1_Ondrejka' with type 'ros.ament_cmake' and name 'block1_Ondrejka'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extensions ['ignore', 'ignore_ament_install']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extension 'ignore'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extension 'ignore_ament_install'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extensions ['colcon_pkg']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extension 'colcon_pkg'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extensions ['colcon_meta']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extension 'colcon_meta'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extensions ['ros']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv1) by extension 'ros'
+[0.105s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cv1' with type 'ros.ament_cmake' and name 'cv1'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extensions ['ignore', 'ignore_ament_install']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'ignore'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'ignore_ament_install'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extensions ['colcon_pkg']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'colcon_pkg'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extensions ['colcon_meta']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'colcon_meta'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extensions ['ros']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'ros'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extensions ['cmake', 'python']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'cmake'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'python'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extensions ['python_setup_py']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2) by extension 'python_setup_py'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extensions ['ignore', 'ignore_ament_install']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'ignore'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'ignore_ament_install'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extensions ['colcon_pkg']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'colcon_pkg'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extensions ['colcon_meta']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'colcon_meta'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extensions ['ros']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'ros'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extensions ['cmake', 'python']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'cmake'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'python'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extensions ['python_setup_py']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/include) by extension 'python_setup_py'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extension 'ignore_ament_install'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extensions ['colcon_pkg']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extension 'colcon_pkg'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extensions ['colcon_meta']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extension 'colcon_meta'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extensions ['ros']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_msgs) by extension 'ros'
+[0.106s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cv2/rrm_msgs' with type 'ros.ament_cmake' and name 'rrm_msgs'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extension 'ignore_ament_install'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extensions ['colcon_pkg']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extension 'colcon_pkg'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extensions ['colcon_meta']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extension 'colcon_meta'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extensions ['ros']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_sim) by extension 'ros'
+[0.107s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cv2/rrm_sim' with type 'ros.ament_cmake' and name 'rrm_sim'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extensions ['ignore', 'ignore_ament_install']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extension 'ignore'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extension 'ignore_ament_install'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extensions ['colcon_pkg']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extension 'colcon_pkg'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extensions ['colcon_meta']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extension 'colcon_meta'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extensions ['ros']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/rrm_simple_robot_model) by extension 'ros'
+[0.108s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cv2/rrm_simple_robot_model' with type 'ros.ament_cmake' and name 'rrm_simple_robot_model'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extensions ['ignore', 'ignore_ament_install']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'ignore'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'ignore_ament_install'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extensions ['colcon_pkg']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'colcon_pkg'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extensions ['colcon_meta']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'colcon_meta'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extensions ['ros']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'ros'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extensions ['cmake', 'python']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'cmake'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'python'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extensions ['python_setup_py']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv2/src) by extension 'python_setup_py'
+[0.108s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.108s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.108s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.108s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.108s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.123s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/greeny/ros2_ws_rrm/install
+[0.124s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/jazzy
+[0.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'cmake_args' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'cmake_target' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'cmake_clean_first' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'cmake_force_configure' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'ament_cmake_args' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'cv1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.149s] DEBUG:colcon.colcon_core.verb:Building package 'cv1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/greeny/ros2_ws_rrm/build/cv1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/greeny/ros2_ws_rrm/install/cv1', 'merge_install': False, 'path': '/home/greeny/ros2_ws_rrm/src/cv1', 'symlink_install': False, 'test_result_base': None}
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'cmake_args' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'cmake_target' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.149s] Level 5:colcon.colcon_core.verb:set package 'rrm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.149s] DEBUG:colcon.colcon_core.verb:Building package 'rrm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/greeny/ros2_ws_rrm/build/rrm_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/greeny/ros2_ws_rrm/install/rrm_msgs', 'merge_install': False, 'path': '/home/greeny/ros2_ws_rrm/src/cv2/rrm_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'cmake_target' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'cmake_clean_cache' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'cmake_clean_first' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'cmake_force_configure' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'ament_cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'catkin_cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_simple_robot_model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.150s] DEBUG:colcon.colcon_core.verb:Building package 'rrm_simple_robot_model' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model', 'merge_install': False, 'path': '/home/greeny/ros2_ws_rrm/src/cv2/rrm_simple_robot_model', 'symlink_install': False, 'test_result_base': None}
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'cmake_target' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'cmake_clean_cache' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'cmake_clean_first' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'cmake_force_configure' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'ament_cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'catkin_cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'block1_Ondrejka' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.150s] DEBUG:colcon.colcon_core.verb:Building package 'block1_Ondrejka' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka', 'merge_install': False, 'path': '/home/greeny/ros2_ws_rrm/src/block1_Ondrejka', 'symlink_install': False, 'test_result_base': None}
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'cmake_target' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.150s] Level 5:colcon.colcon_core.verb:set package 'rrm_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.150s] DEBUG:colcon.colcon_core.verb:Building package 'rrm_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/greeny/ros2_ws_rrm/build/rrm_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/greeny/ros2_ws_rrm/install/rrm_sim', 'merge_install': False, 'path': '/home/greeny/ros2_ws_rrm/src/cv2/rrm_sim', 'symlink_install': False, 'test_result_base': None}
+[0.150s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.151s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.151s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/greeny/ros2_ws_rrm/src/cv2/rrm_msgs' with build type 'ament_cmake'
+[0.151s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/greeny/ros2_ws_rrm/src/cv2/rrm_msgs'
+[0.153s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.153s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.153s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.155s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/greeny/ros2_ws_rrm/src/cv1' with build type 'ament_cmake'
+[0.155s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/greeny/ros2_ws_rrm/src/cv1'
+[0.155s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.155s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.158s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/greeny/ros2_ws_rrm/src/cv2/rrm_simple_robot_model' with build type 'ament_cmake'
+[0.159s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/greeny/ros2_ws_rrm/src/cv2/rrm_simple_robot_model'
+[0.159s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.159s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_msgs -- -j16 -l16
+[0.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[0.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model -- -j16 -l16
+[0.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model -- -j16 -l16
+[0.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model
+[0.234s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrm_simple_robot_model)
+[0.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_simple_robot_model
+[0.237s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model' for CMake module files
+[0.237s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model' for CMake config files
+[0.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_simple_robot_model', 'cmake_prefix_path')
+[0.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/hook/cmake_prefix_path.ps1'
+[0.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/hook/cmake_prefix_path.dsv'
+[0.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/hook/cmake_prefix_path.sh'
+[0.240s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/bin'
+[0.240s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/lib/pkgconfig/rrm_simple_robot_model.pc'
+[0.240s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/lib/python3.12/site-packages'
+[0.240s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/bin'
+[0.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.ps1'
+[0.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.dsv'
+[0.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.sh'
+[0.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.bash'
+[0.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.zsh'
+[0.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/colcon-core/packages/rrm_simple_robot_model)
+[0.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrm_simple_robot_model)
+[0.245s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model' for CMake module files
+[0.245s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model' for CMake config files
+[0.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_simple_robot_model', 'cmake_prefix_path')
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/hook/cmake_prefix_path.ps1'
+[0.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/hook/cmake_prefix_path.dsv'
+[0.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/hook/cmake_prefix_path.sh'
+[0.247s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/bin'
+[0.247s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/lib/pkgconfig/rrm_simple_robot_model.pc'
+[0.247s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/lib/python3.12/site-packages'
+[0.247s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/bin'
+[0.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.ps1'
+[0.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.dsv'
+[0.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.sh'
+[0.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.bash'
+[0.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/rrm_simple_robot_model/package.zsh'
+[0.250s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model/share/colcon-core/packages/rrm_simple_robot_model)
+[0.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[0.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/cv1
+[0.272s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv1)
+[0.273s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1' for CMake module files
+[0.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/cv1
+[0.274s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1' for CMake config files
+[0.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv1', 'cmake_prefix_path')
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/hook/cmake_prefix_path.ps1'
+[0.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/hook/cmake_prefix_path.dsv'
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/hook/cmake_prefix_path.sh'
+[0.279s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/lib'
+[0.279s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/bin'
+[0.279s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/lib/pkgconfig/cv1.pc'
+[0.279s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/lib/python3.12/site-packages'
+[0.280s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/bin'
+[0.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.ps1'
+[0.281s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.dsv'
+[0.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.sh'
+[0.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.bash'
+[0.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.zsh'
+[0.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/cv1/share/colcon-core/packages/cv1)
+[0.283s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv1)
+[0.283s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1' for CMake module files
+[0.283s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1' for CMake config files
+[0.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv1', 'cmake_prefix_path')
+[0.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/hook/cmake_prefix_path.ps1'
+[0.284s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/hook/cmake_prefix_path.dsv'
+[0.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/hook/cmake_prefix_path.sh'
+[0.284s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/lib'
+[0.284s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/bin'
+[0.284s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/lib/pkgconfig/cv1.pc'
+[0.285s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/lib/python3.12/site-packages'
+[0.285s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/cv1/bin'
+[0.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.ps1'
+[0.286s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.dsv'
+[0.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.sh'
+[0.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.bash'
+[0.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.zsh'
+[0.287s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/cv1/share/colcon-core/packages/cv1)
+[0.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_msgs -- -j16 -l16
+[0.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_msgs
+[0.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrm_msgs)
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs' for CMake module files
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs' for CMake config files
+[0.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_msgs', 'cmake_prefix_path')
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/cmake_prefix_path.ps1'
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/cmake_prefix_path.dsv'
+[0.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/cmake_prefix_path.sh'
+[0.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_msgs
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib'
+[0.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_msgs', 'ld_library_path_lib')
+[0.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/ld_library_path_lib.ps1'
+[0.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/ld_library_path_lib.dsv'
+[0.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/ld_library_path_lib.sh'
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/bin'
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/pkgconfig/rrm_msgs.pc'
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/python3.12/site-packages'
+[0.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_msgs', 'pythonpath')
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/pythonpath.ps1'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/pythonpath.dsv'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/pythonpath.sh'
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/bin'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.ps1'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.dsv'
+[0.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.sh'
+[0.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.bash'
+[0.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.zsh'
+[0.569s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/colcon-core/packages/rrm_msgs)
+[0.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrm_msgs)
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs' for CMake module files
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs' for CMake config files
+[0.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_msgs', 'cmake_prefix_path')
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/cmake_prefix_path.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/cmake_prefix_path.dsv'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/cmake_prefix_path.sh'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib'
+[0.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_msgs', 'ld_library_path_lib')
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/ld_library_path_lib.ps1'
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/ld_library_path_lib.dsv'
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/ld_library_path_lib.sh'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/bin'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/pkgconfig/rrm_msgs.pc'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/python3.12/site-packages'
+[0.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_msgs', 'pythonpath')
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/pythonpath.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/pythonpath.dsv'
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/hook/pythonpath.sh'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_msgs/bin'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.ps1'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.dsv'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.sh'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.bash'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/rrm_msgs/package.zsh'
+[0.575s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/rrm_msgs/share/colcon-core/packages/rrm_msgs)
+[0.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/greeny/ros2_ws_rrm/src/block1_Ondrejka' with build type 'ament_cmake'
+[0.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/greeny/ros2_ws_rrm/src/block1_Ondrejka'
+[0.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.578s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/greeny/ros2_ws_rrm/src/cv2/rrm_sim' with build type 'ament_cmake'
+[0.578s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/greeny/ros2_ws_rrm/src/cv2/rrm_sim'
+[0.578s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.578s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16
+[0.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_sim': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_sim -- -j16 -l16
+[0.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_sim' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/rrm_sim -- -j16 -l16
+[0.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/rrm_sim': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_sim
+[0.675s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrm_sim)
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim' for CMake module files
+[0.677s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/rrm_sim' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/rrm_sim
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim' for CMake config files
+[0.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_sim', 'cmake_prefix_path')
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/hook/cmake_prefix_path.ps1'
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/hook/cmake_prefix_path.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/hook/cmake_prefix_path.sh'
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/lib'
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/bin'
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/lib/pkgconfig/rrm_sim.pc'
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/lib/python3.12/site-packages'
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/bin'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.ps1'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.dsv'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.sh'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.bash'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.zsh'
+[0.686s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/rrm_sim/share/colcon-core/packages/rrm_sim)
+[0.687s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrm_sim)
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim' for CMake module files
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim' for CMake config files
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrm_sim', 'cmake_prefix_path')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/hook/cmake_prefix_path.ps1'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/hook/cmake_prefix_path.dsv'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/hook/cmake_prefix_path.sh'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/lib'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/bin'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/lib/pkgconfig/rrm_sim.pc'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/lib/python3.12/site-packages'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/rrm_sim/bin'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.sh'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.bash'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/rrm_sim/share/rrm_sim/package.zsh'
+[0.693s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/rrm_sim/share/colcon-core/packages/rrm_sim)
+[7.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/block1_Ondrejka -- -j16 -l16
+[7.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/block1_Ondrejka
+[7.042s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(block1_Ondrejka)
+[7.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/greeny/ros2_ws_rrm/build/block1_Ondrejka' returned '0': CMAKE_PREFIX_PATH=/home/greeny/ros2_ws_rrm/install/rrm_msgs:/home/greeny/ros2_ws_rrm/install/block1_Ondrejka:/home/greeny/ros2_ws_rrm/install/rrm_simple_robot_model:/home/greeny/ros2_ws_rrm/install/rrm_sim:/home/greeny/ros2_ws_rrm/install/cv1:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/block1_Ondrejka
+[7.043s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka' for CMake module files
+[7.044s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka' for CMake config files
+[7.045s] Level 1:colcon.colcon_core.shell:create_environment_hook('block1_Ondrejka', 'cmake_prefix_path')
+[7.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/hook/cmake_prefix_path.ps1'
+[7.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/hook/cmake_prefix_path.dsv'
+[7.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/hook/cmake_prefix_path.sh'
+[7.048s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib'
+[7.048s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/bin'
+[7.048s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/pkgconfig/block1_Ondrejka.pc'
+[7.049s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/python3.12/site-packages'
+[7.049s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/bin'
+[7.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.ps1'
+[7.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.dsv'
+[7.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.sh'
+[7.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.bash'
+[7.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.zsh'
+[7.054s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/colcon-core/packages/block1_Ondrejka)
+[7.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(block1_Ondrejka)
+[7.055s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka' for CMake module files
+[7.055s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka' for CMake config files
+[7.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('block1_Ondrejka', 'cmake_prefix_path')
+[7.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/hook/cmake_prefix_path.ps1'
+[7.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/hook/cmake_prefix_path.dsv'
+[7.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/hook/cmake_prefix_path.sh'
+[7.057s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib'
+[7.057s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/bin'
+[7.057s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/pkgconfig/block1_Ondrejka.pc'
+[7.057s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/python3.12/site-packages'
+[7.058s] Level 1:colcon.colcon_core.environment:checking '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/bin'
+[7.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.ps1'
+[7.058s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.dsv'
+[7.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.sh'
+[7.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.bash'
+[7.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.zsh'
+[7.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/colcon-core/packages/block1_Ondrejka)
+[7.060s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.061s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.068s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.068s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.068s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.087s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.087s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/greeny/ros2_ws_rrm/install/local_setup.ps1'
+[7.088s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/greeny/ros2_ws_rrm/install/_local_setup_util_ps1.py'
+[7.089s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/greeny/ros2_ws_rrm/install/setup.ps1'
+[7.090s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/greeny/ros2_ws_rrm/install/local_setup.sh'
+[7.090s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/greeny/ros2_ws_rrm/install/_local_setup_util_sh.py'
+[7.091s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/greeny/ros2_ws_rrm/install/setup.sh'
+[7.091s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/greeny/ros2_ws_rrm/install/local_setup.bash'
+[7.092s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/greeny/ros2_ws_rrm/install/setup.bash'
+[7.093s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/greeny/ros2_ws_rrm/install/local_setup.zsh'
+[7.093s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/greeny/ros2_ws_rrm/install/setup.zsh'

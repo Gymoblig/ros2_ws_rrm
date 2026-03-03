@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/cv1_node.dir/src/robot.cpp.o[0m
+[1.681s] [ 66%] [32m[1mLinking CXX executable cv1_node[0m
+[1.763s] [100%] Built target cv1_node
+[1.774s] Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[1.780s] Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/cv1
+[1.788s] -- Install configuration: ""
+[1.788s] -- Installing: /home/greeny/ros2_ws_rrm/install/cv1/lib/cv1/cv1_node
+[1.789s] -- Set non-toolchain portion of runtime path of "/home/greeny/ros2_ws_rrm/install/cv1/lib/cv1/cv1_node" to ""
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/ament_index/resource_index/package_run_dependencies/cv1
+[1.789s] -- Installing: /home/greeny/ros2_ws_rrm/install/cv1/share/ament_index/resource_index/parent_prefix_path/cv1
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/ament_prefix_path.sh
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/ament_prefix_path.dsv
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/path.sh
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/path.dsv
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.bash
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.sh
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.zsh
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.dsv
+[1.789s] -- Installing: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.dsv
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/ament_index/resource_index/packages/cv1
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/cmake/cv1Config.cmake
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/cmake/cv1Config-version.cmake
+[1.789s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.xml
+[1.791s] Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/cv1

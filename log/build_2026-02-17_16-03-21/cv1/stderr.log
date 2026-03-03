@@ -1,0 +1,11 @@
+/usr/bin/ld: CMakeFiles/cv1_node.dir/src/robot.cpp.o: in function `main':
+robot.cpp:(.text+0x0): multiple definition of `main'; CMakeFiles/cv1_node.dir/src/cv1_node.cpp.o:cv1_node.cpp:(.text+0x0): first defined here
+/usr/bin/ld: CMakeFiles/cv1_node.dir/src/robot.cpp.o: in function `main':
+robot.cpp:(.text+0xcb): undefined reference to `Robot::Robot()'
+/usr/bin/ld: robot.cpp:(.text+0x28f): undefined reference to `Robot::getCurrentPosition() const'
+/usr/bin/ld: robot.cpp:(.text+0x360): undefined reference to `Robot::move(double)'
+/usr/bin/ld: robot.cpp:(.text+0x524): undefined reference to `Robot::getCurrentPosition() const'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cv1_node.dir/build.make:179: cv1_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cv1_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,32 @@
+[0.014s] Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[0.102s] [ 33%] [32mBuilding CXX object CMakeFiles/cv1_node.dir/src/cv1_node.cpp.o[0m
+[2.564s] [01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[2.564s] [01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:5:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.564s]     5 | int main([01;35m[Kint argc[m[K, char ** argv) {
+[2.564s]       |          [01;35m[K~~~~^~~~[m[K
+[2.564s] [01m[K/home/greeny/ros2_ws_rrm/src/cv1/src/cv1_node.cpp:5:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.564s]     5 | int main(int argc, [01;35m[Kchar ** argv[m[K) {
+[2.564s]       |                    [01;35m[K~~~~~~~~^~~~[m[K
+[3.237s] [ 66%] [32m[1mLinking CXX executable cv1_node[0m
+[3.371s] [100%] Built target cv1_node
+[3.386s] Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/greeny/ros2_ws_rrm/build/cv1 -- -j16 -l16
+[3.398s] Invoking command in '/home/greeny/ros2_ws_rrm/build/cv1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/cv1
+[3.409s] -- Install configuration: ""
+[3.409s] -- Installing: /home/greeny/ros2_ws_rrm/install/cv1/lib/cv1/cv1_node
+[3.409s] -- Set non-toolchain portion of runtime path of "/home/greeny/ros2_ws_rrm/install/cv1/lib/cv1/cv1_node" to ""
+[3.409s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/ament_index/resource_index/package_run_dependencies/cv1
+[3.409s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/ament_index/resource_index/parent_prefix_path/cv1
+[3.409s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/ament_prefix_path.sh
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/ament_prefix_path.dsv
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/path.sh
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/environment/path.dsv
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.bash
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.sh
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.zsh
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/local_setup.dsv
+[3.410s] -- Installing: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.dsv
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/ament_index/resource_index/packages/cv1
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/cmake/cv1Config.cmake
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/cmake/cv1Config-version.cmake
+[3.410s] -- Up-to-date: /home/greeny/ros2_ws_rrm/install/cv1/share/cv1/package.xml
+[3.412s] Invoked command in '/home/greeny/ros2_ws_rrm/build/cv1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/greeny/ros2_ws_rrm/build/cv1

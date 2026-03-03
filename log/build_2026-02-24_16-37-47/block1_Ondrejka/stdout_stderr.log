@@ -1,0 +1,23 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/logger_node.dir/src/logger_node.cpp.o[0m
+[ 75%] Built target teleop_node
+[100%] [32m[1mLinking CXX executable logger_node[0m
+[100%] Built target logger_node
+-- Install configuration: ""
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/teleop_node
+-- Installing: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/logger_node
+-- Set non-toolchain portion of runtime path of "/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/logger_node" to ""
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/package_run_dependencies/block1_Ondrejka
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/parent_prefix_path/block1_Ondrejka
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/ament_prefix_path.sh
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/path.sh
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/path.dsv
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.bash
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.sh
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.zsh
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/local_setup.dsv
+-- Installing: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.dsv
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/packages/block1_Ondrejka
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/cmake/block1_OndrejkaConfig.cmake
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/cmake/block1_OndrejkaConfig-version.cmake
+-- Up-to-date: /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/package.xml
