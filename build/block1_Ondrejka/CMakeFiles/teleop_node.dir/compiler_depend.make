@@ -8,6 +8,11 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
   /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__traits.hpp \
   /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__type_support.hpp \
   /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/command.hpp \
+  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__builder.hpp \
+  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__struct.hpp \
+  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__traits.hpp \
+  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__type_support.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
@@ -825,8 +830,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
@@ -1041,13 +1044,7 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /usr/include/c++/13/cstring:
 
-/usr/include/endian.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_options.hpp:
-
-/usr/include/c++/13/algorithm:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
+/usr/include/c++/13/cstdint:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/service.hpp:
 
@@ -1059,11 +1056,7 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
@@ -1094,10 +1087,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
-
-/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
 
@@ -1150,8 +1139,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
-
-/usr/include/c++/13/cstdint:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
@@ -1223,10 +1210,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /usr/include/c++/13/bits/stl_queue.h:
@@ -1295,17 +1278,21 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rcl/rcl/init_options.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
+/usr/include/c++/13/csignal:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
-/opt/ros/jazzy/include/rcl/rcl/wait.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
+
+/usr/include/c++/13/ext/string_conversions.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
 /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__type_support.hpp:
 
@@ -1335,13 +1322,7 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
-
-/usr/include/c++/13/csignal:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
+/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:
 
@@ -1366,12 +1347,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/c++/13/bits/ostream.tcc:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/context.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/event.h:
 
@@ -1401,6 +1376,54 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rcl/rcl/allocator.h:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_clock_interface.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
+
+/home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/command.hpp:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+
+/usr/include/c++/13/cstddef:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/types.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/context.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
+/usr/include/c++/13/iosfwd:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
@@ -1416,20 +1439,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
-
-/usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
-
-/usr/include/c++/13/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -1451,21 +1460,15 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
+/home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__builder.hpp:
+
 /opt/ros/jazzy/include/rcl/rcl/domain_id.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_clock_interface.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
-
-/usr/include/c++/13/condition_variable:
-
-/opt/ros/jazzy/include/rcl/rcl/types.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -1476,6 +1479,8 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /opt/ros/jazzy/include/rcl/rcl/publisher.h:
 
 /usr/include/c++/13/bits/stl_tree.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
 
@@ -1495,6 +1500,24 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
+/usr/include/c++/13/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
+
+/home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__type_support.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/condition_variable:
+
 /usr/include/stdint.h:
 
 /opt/ros/jazzy/include/rcl/rcl/subscription.h:
@@ -1504,8 +1527,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
@@ -1541,13 +1562,7 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+/opt/ros/jazzy/include/rcl/rcl/wait.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
@@ -1555,17 +1570,17 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
-
-/usr/include/c++/13/iosfwd:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
@@ -1741,11 +1756,17 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
 
-/usr/include/c++/13/ext/string_conversions.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
+
+/usr/include/endian.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_options.hpp:
+
+/usr/include/c++/13/algorithm:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
@@ -2049,6 +2070,8 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
+/home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__struct.hpp:
+
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h:
@@ -2209,8 +2232,6 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
-/usr/include/c++/13/bits/quoted_string.h:
-
 /usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
@@ -2276,9 +2297,3 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: /home/greeny/ros2_ws_rrm/src/b
 /usr/include/c++/13/codecvt:
 
 /usr/include/c++/13/compare:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
-
-/usr/include/c++/13/cstddef:

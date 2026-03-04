@@ -690,4 +690,9 @@ CMakeFiles/teleop_node.dir/src/teleop_node.cpp.o: \
  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__builder.hpp \
  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__traits.hpp \
  /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__type_support.hpp \
- /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/command.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__struct.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__builder.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__traits.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/srv/detail/command__type_support.hpp
