@@ -6,7 +6,7 @@
 #include <vector>
 
 
-void save_position_to_file(int id, const std::vector<double>& positions, double velocity, rclcpp::Logger logger)
+void save_position_to_file(int id, const std::vector<double>& positions, double velocity/*, rclcpp::Logger logger*/)
 {
     std::ofstream file("trajectory.txt", std::ios::app);
     if (file.is_open()) {
@@ -14,9 +14,9 @@ void save_position_to_file(int id, const std::vector<double>& positions, double 
         for (double p : positions) file << p << " ";
         file << velocity << "\n";
         file.close();
-        RCLCPP_INFO(logger, "Logged Point %d to trajectory.txt", id);
+        //RCLCPP_INFO(logger, "Logged Point %d to trajectory.txt", id);
     } else {
-        RCLCPP_ERROR(logger, "Failed to open trajectory.txt");
+        //RCLCPP_ERROR(logger, "Failed to open trajectory.txt");
     }
 }
 
@@ -26,7 +26,7 @@ public:
     // Konštruktor
     JointLogger() : Node("joint_logger"), point_counter_(0)
     {
-        // Prihlásenie sa na odber topicu /joint_states
+        
         subscription_ = this->create_subscription<sensor_msgs::msg::JointState>(
             "/joint_states", 10, 
             std::bind(&JointLogger::joint_states_callback, this, std::placeholders::_1)
@@ -50,7 +50,8 @@ public:
         }
 
         if (request->save) {
-            save_position_to_file(point_counter_++, last_joint_states_, request->velocity, this->get_logger());
+            save_position_to_file(point_counter_++, last_joint_states_, request->velocity/*, this->get_logger()*/);
+            last_saved_position_ = last_joint_states_;
         }
 
         if (request->positions.empty()) {
@@ -66,6 +67,8 @@ public:
             publisher_->publish(move_msg);
         }
 
+        
+
         response->result = true;
         response->message = "Position saved!";
     }
@@ -76,9 +79,22 @@ private:
     {
         last_joint_states_ = msg->position;
         // Console output of current joint positions
-        printf("\r[LIVE] J0: %6.4f | J1: %6.4f | J2: %6.4f   ",
-           msg->position[0], msg->position[1], msg->position[2]);
-        yfflush(stdout);
+        // \r   = Move to start of line
+
+        printf("\r"); 
+
+        // Print LIVE data with fixed width
+        printf("[LIVE] J0:%7.3f J1:%7.3f J2:%7.3f",
+            msg->position[0], msg->position[1], msg->position[2]);
+
+        // Print LOGGED data on the SAME line if it exists
+        if (!last_saved_position_.empty()) {
+            printf(" | [SAVED #%d] J0:%7.3f J1:%7.3f J2:%7.3f",
+                (point_counter_ > 0 ? point_counter_ - 1 : 0),
+                last_saved_position_[0], last_saved_position_[1], last_saved_position_[2]);
+        }
+
+        fflush(stdout);
     }
 
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscription_;
@@ -86,6 +102,7 @@ private:
     rclcpp::Publisher<rrm_msgs::msg::Command>::SharedPtr publisher_;
     int point_counter_;
     std::vector<double> last_joint_states_;
+    std::vector<double> last_saved_position_;
 };
 
 int main(int argc, char * argv[])

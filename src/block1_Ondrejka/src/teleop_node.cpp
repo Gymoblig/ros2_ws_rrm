@@ -51,7 +51,7 @@ public:
   // Exercise 3 Point 1b: Synchronized Service-based move
   bool move(const std::vector<double>& target_positions, double max_velocity, bool save = false) {
     auto request = std::make_shared<ondrejka_interface::srv::MyService::Request>();
-    pocitanicko_rychlosti(target_positions, max_velocity); // vypočíta ale výsledok nepotrebujeme posielať
+    pocitanicko_rychlosti(target_positions, max_velocity); 
     request->positions = target_positions;
     request->velocity = max_velocity;
     request->save = save;
@@ -92,7 +92,7 @@ public:
       case 't': move(joint_positions_, 1.0, true); break;
       case 'x': rclcpp::shutdown(); break;
       case 'l': play_positions_from_file(); break;
-      default: std::cout << "Supported: Q/A, W/S, E/D, P (Service), R (Reset), X (Exit)" << std::endl; break;
+      default: std::cout << "Supported: Q/A, W/S, E/D, P/O (Service), R (Reset), X (Exit), T (Save Position)\n" << std::endl; break;
     }
   }
 
@@ -109,7 +109,7 @@ public:
       while (file >> id >> p0 >> p1 >> p2 >> vel) {
           RCLCPP_INFO(this->get_logger(), "Playing point %d...", id);
           move({p0, p1, p2}, vel);
-          rclcpp::sleep_for(std::chrono::milliseconds(500));
+          rclcpp::sleep_for(std::chrono::seconds(3));
       }
       file.close();
   }
