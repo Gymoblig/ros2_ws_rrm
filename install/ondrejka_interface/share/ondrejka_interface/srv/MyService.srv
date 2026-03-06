@@ -1,0 +1,6 @@
+float64[] positions
+float64 velocity
+bool save
+---
+bool result
+string message

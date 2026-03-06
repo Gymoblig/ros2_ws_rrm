@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rrm_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(ondrejka_interface REQUIRED)
 
 add_executable(teleop_node src/teleop_node.cpp)
 add_executable(logger_node src/logger_node.cpp)
@@ -28,6 +29,7 @@ ament_target_dependencies(
   teleop_node
   "rclcpp"
   "rrm_msgs"
+  "ondrejka_interface"
 )
 
 target_compile_features(logger_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
@@ -35,6 +37,8 @@ ament_target_dependencies(
   logger_node
   "rclcpp"
   "sensor_msgs"
+  "rrm_msgs"
+  "ondrejka_interface"
 )
 
 install(TARGETS teleop_node logger_node

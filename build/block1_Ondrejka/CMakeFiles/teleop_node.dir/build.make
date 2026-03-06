@@ -99,6 +99,12 @@ teleop_node: /home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/librrm_msgs__rosidl_t
 teleop_node: /home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/librrm_msgs__rosidl_typesupport_introspection_cpp.so
 teleop_node: /home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/librrm_msgs__rosidl_typesupport_cpp.so
 teleop_node: /home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/librrm_msgs__rosidl_generator_py.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_typesupport_fastrtps_c.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_typesupport_introspection_c.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_typesupport_fastrtps_cpp.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_typesupport_introspection_cpp.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_typesupport_cpp.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_generator_py.so
 teleop_node: /opt/ros/jazzy/lib/liblibstatistics_collector.so
 teleop_node: /opt/ros/jazzy/lib/librcl.so
 teleop_node: /opt/ros/jazzy/lib/librmw_implementation.so
@@ -139,6 +145,8 @@ teleop_node: /opt/ros/jazzy/lib/libtracetools.so
 teleop_node: /opt/ros/jazzy/lib/librcl_logging_interface.so
 teleop_node: /home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/librrm_msgs__rosidl_typesupport_c.so
 teleop_node: /home/greeny/ros2_ws_rrm/install/rrm_msgs/lib/librrm_msgs__rosidl_generator_c.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_typesupport_c.so
+teleop_node: /home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib/libondrejka_interface__rosidl_generator_c.so
 teleop_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
 teleop_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
 teleop_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so

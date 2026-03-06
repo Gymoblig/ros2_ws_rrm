@@ -692,4 +692,20 @@ CMakeFiles/logger_node.dir/src/logger_node.cpp.o: \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/command.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__struct.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__builder.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__traits.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/detail/command__type_support.hpp \
+ /home/greeny/ros2_ws_rrm/install/rrm_msgs/include/rrm_msgs/rrm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/greeny/ros2_ws_rrm/install/ondrejka_interface/include/ondrejka_interface/ondrejka_interface/srv/my_service.hpp \
+ /home/greeny/ros2_ws_rrm/install/ondrejka_interface/include/ondrejka_interface/ondrejka_interface/srv/detail/my_service__struct.hpp \
+ /home/greeny/ros2_ws_rrm/install/ondrejka_interface/include/ondrejka_interface/ondrejka_interface/srv/detail/my_service__builder.hpp \
+ /home/greeny/ros2_ws_rrm/install/ondrejka_interface/include/ondrejka_interface/ondrejka_interface/srv/detail/my_service__traits.hpp \
+ /home/greeny/ros2_ws_rrm/install/ondrejka_interface/include/ondrejka_interface/ondrejka_interface/srv/detail/my_service__type_support.hpp \
+ /home/greeny/ros2_ws_rrm/install/ondrejka_interface/include/ondrejka_interface/ondrejka_interface/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /usr/include/c++/13/fstream \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc

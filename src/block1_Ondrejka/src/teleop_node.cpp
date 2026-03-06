@@ -4,8 +4,12 @@
 #include <vector>
 #include <chrono>
 
-// Adding libraries for Exercise 3 
-#include "rrm_msgs/srv/command.hpp"
+
+//BONUS Excercise 4
+#include <fstream>
+
+// Adding libraries for Exercise 4 
+#include "ondrejka_interface/srv/my_service.hpp"
 
 class Teleop : public rclcpp::Node
 {
@@ -18,7 +22,7 @@ public:
     publisher_ = this->create_publisher<rrm_msgs::msg::Command>("move_command", 10);
     
     // Service Client
-    client_ = this->create_client<rrm_msgs::srv::Command>("move_command");
+    client_ = this->create_client<ondrejka_interface::srv::MyService>("my_service");
 
     while (!client_->wait_for_service(std::chrono::seconds(1))) {
       if (!rclcpp::ok()) {
@@ -45,12 +49,13 @@ public:
   }
 
   // Exercise 3 Point 1b: Synchronized Service-based move
-  bool move(const std::vector<double>& target_positions, double max_velocity) {
-    auto request = std::make_shared<rrm_msgs::srv::Command::Request>();
+  bool move(const std::vector<double>& target_positions, double max_velocity, bool save = false) {
+    auto request = std::make_shared<ondrejka_interface::srv::MyService::Request>();
+    pocitanicko_rychlosti(target_positions, max_velocity); // vypočíta ale výsledok nepotrebujeme posielať
     request->positions = target_positions;
+    request->velocity = max_velocity;
+    request->save = save;
 
-
-    request->velocities = pocitanicko_rychlosti(target_positions, max_velocity);
 
     auto result = client_->async_send_request(request);
 
@@ -67,7 +72,7 @@ public:
     // 3. Update internal positions only if the move was successful
     joint_positions_ = target_positions;
     
-    RCLCPP_INFO(this->get_logger(), "Service call succeeded: %s", response->message.c_str());
+    //RCLCPP_INFO(this->get_logger(), "Service call succeeded: %s", response->message.c_str());
     return true;
   }
 
@@ -84,9 +89,29 @@ public:
       case 'p': move({1.0, 1.0, 1.0}, 0.5); break;
       case 'o': move({3.0, 0.5, 2.0}, 2.5); break; 
       case 'r': move({0.0, 0.0, 0.0}, 1.0); break; // Reset using with service
+      case 't': move(joint_positions_, 1.0, true); break;
       case 'x': rclcpp::shutdown(); break;
+      case 'l': play_positions_from_file(); break;
       default: std::cout << "Supported: Q/A, W/S, E/D, P (Service), R (Reset), X (Exit)" << std::endl; break;
     }
+  }
+
+  void play_positions_from_file()
+  {
+      std::ifstream file("trajectory.txt");
+      if (!file.is_open()) {
+          RCLCPP_ERROR(this->get_logger(), "Cannot open trajectory.txt!");
+          return;
+      }
+
+      int id;
+      double p0, p1, p2, vel;
+      while (file >> id >> p0 >> p1 >> p2 >> vel) {
+          RCLCPP_INFO(this->get_logger(), "Playing point %d...", id);
+          move({p0, p1, p2}, vel);
+          rclcpp::sleep_for(std::chrono::milliseconds(500));
+      }
+      file.close();
   }
 
 private:
@@ -109,13 +134,13 @@ private:
             velocities[i] = v_max * (delta / max_delta);
         }
     }
-    esle {
-      RCLCPP_WARN(this->get_logger(), "Move from 0 radiants is not posible!"); 
+    else {
+      RCLCPP_INFO(this->get_logger(), "Move was saved!"); 
     }
     return velocities;
   }
   rclcpp::Publisher<rrm_msgs::msg::Command>::SharedPtr publisher_;
-  rclcpp::Client<rrm_msgs::srv::Command>::SharedPtr client_;
+  rclcpp::Client<ondrejka_interface::srv::MyService>::SharedPtr client_;
   std::vector<double> joint_positions_;
 };
 

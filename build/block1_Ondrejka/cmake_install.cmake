@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/teleop_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/teleop_node"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib:"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib:/home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/teleop_node")
@@ -78,7 +78,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/logger_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/logger_node"
-         OLD_RPATH "/opt/ros/jazzy/lib:"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib:/home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/logger_node")

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ondrejka_interface/srv/MyService.srv
+// generated code does not contain a copyright notice
+
+
+module ondrejka_interface {
+  module srv {
+    struct MyService_Request {
+      sequence<double> positions;
+
+      double velocity;
+
+      boolean save;
+    };
+    struct MyService_Response {
+      boolean result;
+
+      string message;
+    };
+  };
+};
