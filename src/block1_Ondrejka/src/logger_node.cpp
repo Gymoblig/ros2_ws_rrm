@@ -67,8 +67,8 @@ private:
         std::cout << "└──────────────────────────────────────────────────┘" << std::endl;
     }
 
-    /**
-     * @brief Service callback handling save requests and trajectory playback.
+    /** 
+     * Service callback handling save requests and trajectory playback.
      */
     void srv_cb(const std::shared_ptr<ondrejka_interface::srv::MyService::Request> req,
                 std::shared_ptr<ondrejka_interface::srv::MyService::Response> res) {

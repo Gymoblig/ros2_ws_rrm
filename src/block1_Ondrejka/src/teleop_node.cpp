@@ -12,6 +12,7 @@
 
 /**
  * @brief Teleoperation node using linear interpolation to synchronize joint movements.
+ * Supports dynamic speed (v_max) for different target positions.
  */
 class Teleop : public rclcpp::Node
 {
@@ -54,13 +55,14 @@ public:
 
   void handle_input(char key) {
     switch (tolower(key)) {
-      case '1': send_move({0.5, 0.5, 0.5}, "#1"); break;
-      case '2': send_move({1.0, -0.5, 0.2}, "#2"); break;
-      case '3': send_move({-1.2, 0.8, -0.8}, "#3"); break;
-      case '4': send_move({2.0, 0.0, 1.5}, "#4"); break;
-      case '5': send_move({0.0, 0.0, 0.0}, "HOME"); break;
-      case 't': call_service(true); break;
-      case 'l': call_service(false); break;
+      // Different targets can now use different v_max values
+      case '1': send_move({0.5, 0.5, 0.5}, "#1", 0.8); break;
+      case '2': send_move({1.0, -0.5, 0.2}, "#2", 0.8); break;
+      case '3': send_move({-1.2, 0.8, -0.8}, "#3", 1.2); break; // Faster
+      case '4': send_move({2.0, 0.0, 1.5}, "#4", 0.8); break;
+      case '5': send_move({0.0, 0.0, 0.0}, "HOME", 0.4); break; // Slower for safety
+      case 't': call_service(true, 1.0); break;
+      case 'l': call_service(false, 1.0); break;
       case 'x': rclcpp::shutdown(); break;
     }
   }
@@ -73,18 +75,15 @@ private:
   }
 
   /**
-   * @brief Synchronizes joint movements through linear interpolation.
-   * Calculates required steps based on max displacement and desired velocity.
+   * Move execution using linear interpolation.
+   * The maximum velocity for the leading joint (rad/s).
    */
-  void send_move(const std::vector<double>& targets, const std::string& id) {
-    double v_max = 0.8;         // Radians per second
-    double loop_rate_hz = 50.0; // Frequency of publishing
+  void send_move(const std::vector<double>& targets, const std::string& id, double v_max) {
+    double loop_rate_hz = 50.0;
     rclcpp::Rate loop_rate(loop_rate_hz);
 
-    // Get current positions at the start of movement
     std::vector<double> start_pos = joint_positions_;
     
-    // 1. Calculate the maximum distance any joint needs to travel
     double max_delta = 0.0;
     for (size_t i = 0; i < targets.size(); ++i) {
         max_delta = std::max(max_delta, std::abs(targets[i] - start_pos[i]));
@@ -95,38 +94,31 @@ private:
         return;
     }
 
-    // 2. Determine total time and number of steps for synchronization
     double total_time = max_delta / v_max;
     int total_steps = static_cast<int>(total_time * loop_rate_hz);
     if (total_steps < 1) total_steps = 1;
 
-    update_interface("Moving to " + id + " (Interpolating...)");
+    update_interface("Moving to " + id + " at v=" + std::to_string(v_max) + " rad/s");
 
-    // 3. Perform the movement in small, synchronized increments
     for (int step = 1; step <= total_steps; ++step) {
         double t = static_cast<double>(step) / total_steps;
 
         for (size_t i = 0; i < targets.size(); ++i) {
             rrm_msgs::msg::Command msg;
             msg.joint_id = static_cast<int>(i);
-            // Linear interpolation: current = start + (target - start) * ratio
             msg.position = start_pos[i] + (targets[i] - start_pos[i]) * t;
             publisher_->publish(msg);
         }
-        
-        // Brief sleep to maintain the 50Hz rate
         loop_rate.sleep();
-        
-        // Spin to keep receiving joint updates if necessary (though we use start_pos)
         rclcpp::spin_some(this->get_node_base_interface());
     }
 
     update_interface("Reached target " + id);
   }
 
-  void call_service(bool save_mode) {
+  void call_service(bool save_mode, double velocity) {
     auto request = std::make_shared<ondrejka_interface::srv::MyService::Request>();
-    request->velocity = 1.0; 
+    request->velocity = velocity; 
     request->save = save_mode;
 
     update_interface(save_mode ? "Sending Save Request..." : "Requesting Playback...");
