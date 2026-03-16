@@ -59,9 +59,6 @@ struct MyService_Request_
   }
 
   // field types and members
-  using _positions_type =
-    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
-  _positions_type positions;
   using _velocity_type =
     double;
   _velocity_type velocity;
@@ -70,12 +67,6 @@ struct MyService_Request_
   _save_type save;
 
   // setters for named parameter idiom
-  Type & set__positions(
-    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
-  {
-    this->positions = _arg;
-    return *this;
-  }
   Type & set__velocity(
     const double & _arg)
   {
@@ -131,9 +122,6 @@ struct MyService_Request_
   // comparison operators
   bool operator==(const MyService_Request_ & other) const
   {
-    if (this->positions != other.positions) {
-      return false;
-    }
     if (this->velocity != other.velocity) {
       return false;
     }

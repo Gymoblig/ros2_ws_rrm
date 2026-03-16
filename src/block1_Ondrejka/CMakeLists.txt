@@ -30,6 +30,7 @@ ament_target_dependencies(
   "rclcpp"
   "rrm_msgs"
   "ondrejka_interface"
+  "sensor_msgs"
 )
 
 target_compile_features(logger_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17

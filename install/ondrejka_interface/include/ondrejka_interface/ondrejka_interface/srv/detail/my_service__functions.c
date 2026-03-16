@@ -10,19 +10,10 @@
 
 #include "rcutils/allocator.h"
 
-// Include directives for member types
-// Member `positions`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
-
 bool
 ondrejka_interface__srv__MyService_Request__init(ondrejka_interface__srv__MyService_Request * msg)
 {
   if (!msg) {
-    return false;
-  }
-  // positions
-  if (!rosidl_runtime_c__double__Sequence__init(&msg->positions, 0)) {
-    ondrejka_interface__srv__MyService_Request__fini(msg);
     return false;
   }
   // velocity
@@ -36,8 +27,6 @@ ondrejka_interface__srv__MyService_Request__fini(ondrejka_interface__srv__MyServ
   if (!msg) {
     return;
   }
-  // positions
-  rosidl_runtime_c__double__Sequence__fini(&msg->positions);
   // velocity
   // save
 }
@@ -46,12 +35,6 @@ bool
 ondrejka_interface__srv__MyService_Request__are_equal(const ondrejka_interface__srv__MyService_Request * lhs, const ondrejka_interface__srv__MyService_Request * rhs)
 {
   if (!lhs || !rhs) {
-    return false;
-  }
-  // positions
-  if (!rosidl_runtime_c__double__Sequence__are_equal(
-      &(lhs->positions), &(rhs->positions)))
-  {
     return false;
   }
   // velocity
@@ -71,12 +54,6 @@ ondrejka_interface__srv__MyService_Request__copy(
   ondrejka_interface__srv__MyService_Request * output)
 {
   if (!input || !output) {
-    return false;
-  }
-  // positions
-  if (!rosidl_runtime_c__double__Sequence__copy(
-      &(input->positions), &(output->positions)))
-  {
     return false;
   }
   // velocity

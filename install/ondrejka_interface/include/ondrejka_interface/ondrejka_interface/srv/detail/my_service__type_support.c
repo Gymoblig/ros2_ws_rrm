@@ -12,10 +12,6 @@
 #include "ondrejka_interface/srv/detail/my_service__struct.h"
 
 
-// Include directives for member types
-// Member `positions`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -35,80 +31,7 @@ void ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspectio
   ondrejka_interface__srv__MyService_Request__fini(message_memory);
 }
 
-size_t ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__size_function__MyService_Request__positions(
-  const void * untyped_member)
-{
-  const rosidl_runtime_c__double__Sequence * member =
-    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
-  return member->size;
-}
-
-const void * ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__get_const_function__MyService_Request__positions(
-  const void * untyped_member, size_t index)
-{
-  const rosidl_runtime_c__double__Sequence * member =
-    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void * ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__get_function__MyService_Request__positions(
-  void * untyped_member, size_t index)
-{
-  rosidl_runtime_c__double__Sequence * member =
-    (rosidl_runtime_c__double__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__fetch_function__MyService_Request__positions(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const double * item =
-    ((const double *)
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__get_const_function__MyService_Request__positions(untyped_member, index));
-  double * value =
-    (double *)(untyped_value);
-  *value = *item;
-}
-
-void ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__assign_function__MyService_Request__positions(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  double * item =
-    ((double *)
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__get_function__MyService_Request__positions(untyped_member, index));
-  const double * value =
-    (const double *)(untyped_value);
-  *item = *value;
-}
-
-bool ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__resize_function__MyService_Request__positions(
-  void * untyped_member, size_t size)
-{
-  rosidl_runtime_c__double__Sequence * member =
-    (rosidl_runtime_c__double__Sequence *)(untyped_member);
-  rosidl_runtime_c__double__Sequence__fini(member);
-  return rosidl_runtime_c__double__Sequence__init(member, size);
-}
-
-static rosidl_typesupport_introspection_c__MessageMember ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__MyService_Request_message_member_array[3] = {
-  {
-    "positions",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is key
-    true,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(ondrejka_interface__srv__MyService_Request, positions),  // bytes offset in struct
-    NULL,  // default value
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__size_function__MyService_Request__positions,  // size() function pointer
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__get_const_function__MyService_Request__positions,  // get_const(index) function pointer
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__get_function__MyService_Request__positions,  // get(index) function pointer
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__fetch_function__MyService_Request__positions,  // fetch(index, &value) function pointer
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__assign_function__MyService_Request__positions,  // assign(index, value) function pointer
-    ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__resize_function__MyService_Request__positions  // resize(index) function pointer
-  },
+static rosidl_typesupport_introspection_c__MessageMember ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__MyService_Request_message_member_array[2] = {
   {
     "velocity",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -150,7 +73,7 @@ static rosidl_typesupport_introspection_c__MessageMember ondrejka_interface__srv
 static const rosidl_typesupport_introspection_c__MessageMembers ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__MyService_Request_message_members = {
   "ondrejka_interface__srv",  // message namespace
   "MyService_Request",  // message name
-  3,  // number of fields
+  2,  // number of fields
   sizeof(ondrejka_interface__srv__MyService_Request),
   false,  // has_any_key_member_
   ondrejka_interface__srv__MyService_Request__rosidl_typesupport_introspection_c__MyService_Request_message_member_array,  // message members

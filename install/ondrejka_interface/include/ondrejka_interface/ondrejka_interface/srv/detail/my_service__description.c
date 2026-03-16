@@ -11,10 +11,10 @@ ondrejka_interface__srv__MyService__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xa5, 0xaa, 0xe0, 0xfa, 0x62, 0x90, 0xa0, 0x83,
-      0x88, 0x0f, 0x38, 0x12, 0x3d, 0xbb, 0x67, 0x09,
-      0x10, 0x1d, 0xd9, 0x39, 0x9a, 0xc0, 0xd5, 0x6c,
-      0x19, 0xc8, 0x71, 0x5e, 0x08, 0xca, 0x82, 0x15,
+      0xda, 0xd9, 0x76, 0x8c, 0x15, 0xf1, 0x44, 0xba,
+      0xc9, 0x45, 0x84, 0xec, 0x0a, 0xbf, 0xa4, 0xcf,
+      0x75, 0xbb, 0x7b, 0xfa, 0x2d, 0x38, 0xb8, 0x79,
+      0x63, 0xf1, 0x64, 0xd3, 0xb1, 0x05, 0x3f, 0x98,
     }};
   return &hash;
 }
@@ -26,10 +26,10 @@ ondrejka_interface__srv__MyService_Request__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x5d, 0x94, 0xa5, 0xda, 0xd8, 0xf4, 0xee, 0xdd,
-      0x54, 0x97, 0xd2, 0xba, 0x56, 0x3e, 0x71, 0x2b,
-      0xc9, 0xbc, 0x65, 0x81, 0x05, 0xd2, 0xb4, 0x93,
-      0x8e, 0xc0, 0xfe, 0x12, 0x67, 0x3b, 0x86, 0x51,
+      0x0d, 0x3b, 0x86, 0xe0, 0x86, 0xe8, 0xef, 0x53,
+      0xc4, 0x7f, 0xc5, 0xf5, 0x4f, 0xad, 0xde, 0x70,
+      0x1b, 0x36, 0xab, 0xda, 0x8f, 0xc9, 0xd0, 0x3a,
+      0xff, 0xfa, 0xcd, 0x42, 0x34, 0x54, 0xa6, 0x9b,
     }};
   return &hash;
 }
@@ -56,10 +56,10 @@ ondrejka_interface__srv__MyService_Event__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x6b, 0xa3, 0x09, 0x36, 0xc3, 0xde, 0x4e, 0xbd,
-      0x19, 0x2c, 0x5e, 0xb4, 0xc0, 0x51, 0xa6, 0x63,
-      0x76, 0xbd, 0x08, 0xe5, 0x7d, 0x87, 0xe1, 0x39,
-      0x7d, 0xac, 0xd4, 0x5d, 0xe4, 0x47, 0xd7, 0x55,
+      0x57, 0xda, 0x5c, 0xd7, 0x64, 0x1f, 0xea, 0x1e,
+      0xcf, 0x34, 0xef, 0x5b, 0x25, 0xfe, 0xfd, 0xd0,
+      0x25, 0x57, 0xfe, 0xba, 0x49, 0x10, 0x2f, 0x41,
+      0xb4, 0x5f, 0x5a, 0xf2, 0xfc, 0x3a, 0x79, 0x2d,
     }};
   return &hash;
 }
@@ -68,8 +68,8 @@ ondrejka_interface__srv__MyService_Event__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "builtin_interfaces/msg/detail/time__functions.h"
 #include "service_msgs/msg/detail/service_event_info__functions.h"
+#include "builtin_interfaces/msg/detail/time__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG
@@ -181,21 +181,10 @@ ondrejka_interface__srv__MyService__get_type_description(
   return &description;
 }
 // Define type names, field names, and default values
-static char ondrejka_interface__srv__MyService_Request__FIELD_NAME__positions[] = "positions";
 static char ondrejka_interface__srv__MyService_Request__FIELD_NAME__velocity[] = "velocity";
 static char ondrejka_interface__srv__MyService_Request__FIELD_NAME__save[] = "save";
 
 static rosidl_runtime_c__type_description__Field ondrejka_interface__srv__MyService_Request__FIELDS[] = {
-  {
-    {ondrejka_interface__srv__MyService_Request__FIELD_NAME__positions, 9, 9},
-    {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_DOUBLE_UNBOUNDED_SEQUENCE,
-      0,
-      0,
-      {NULL, 0, 0},
-    },
-    {NULL, 0, 0},
-  },
   {
     {ondrejka_interface__srv__MyService_Request__FIELD_NAME__velocity, 8, 8},
     {
@@ -227,7 +216,7 @@ ondrejka_interface__srv__MyService_Request__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {ondrejka_interface__srv__MyService_Request__TYPE_NAME, 40, 40},
-      {ondrejka_interface__srv__MyService_Request__FIELDS, 3, 3},
+      {ondrejka_interface__srv__MyService_Request__FIELDS, 2, 2},
     },
     {NULL, 0, 0},
   };
@@ -364,7 +353,6 @@ ondrejka_interface__srv__MyService_Event__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
-  "float64[] positions\n"
   "float64 velocity\n"
   "bool save\n"
   "---\n"
@@ -384,7 +372,7 @@ ondrejka_interface__srv__MyService__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {ondrejka_interface__srv__MyService__TYPE_NAME, 32, 32},
     {srv_encoding, 3, 3},
-    {toplevel_type_raw_source, 78, 78},
+    {toplevel_type_raw_source, 58, 58},
   };
   return &source;
 }

@@ -28,24 +28,6 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: positions
-  {
-    if (msg.positions.size() == 0) {
-      out << "positions: []";
-    } else {
-      out << "positions: [";
-      size_t pending_items = msg.positions.size();
-      for (auto item : msg.positions) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
-    out << ", ";
-  }
-
   // member: velocity
   {
     out << "velocity: ";
@@ -65,26 +47,6 @@ inline void to_block_style_yaml(
   const MyService_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: positions
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    if (msg.positions.size() == 0) {
-      out << "positions: []\n";
-    } else {
-      out << "positions:\n";
-      for (auto item : msg.positions) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
-  }
-
   // member: velocity
   {
     if (indentation > 0) {
@@ -152,11 +114,11 @@ inline const char * name<ondrejka_interface::srv::MyService_Request>()
 
 template<>
 struct has_fixed_size<ondrejka_interface::srv::MyService_Request>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<ondrejka_interface::srv::MyService_Request>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<ondrejka_interface::srv::MyService_Request>

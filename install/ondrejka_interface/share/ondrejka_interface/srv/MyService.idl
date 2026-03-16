@@ -6,8 +6,6 @@
 module ondrejka_interface {
   module srv {
     struct MyService_Request {
-      sequence<double> positions;
-
       double velocity;
 
       boolean save;

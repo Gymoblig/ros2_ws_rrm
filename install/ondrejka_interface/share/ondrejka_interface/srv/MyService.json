@@ -100,16 +100,6 @@
         "type_name": "ondrejka_interface/srv/MyService_Request",
         "fields": [
           {
-            "name": "positions",
-            "type": {
-              "type_id": 155,
-              "capacity": 0,
-              "string_capacity": 0,
-              "nested_type_name": ""
-            },
-            "default_value": ""
-          },
-          {
             "name": "velocity",
             "type": {
               "type_id": 11,
@@ -206,7 +196,7 @@
   "type_hashes": [
     {
       "type_name": "ondrejka_interface/srv/MyService",
-      "hash_string": "RIHS01_a5aae0fa6290a083880f38123dbb6709101dd9399ac0d56c19c8715e08ca8215"
+      "hash_string": "RIHS01_dad9768c15f144bac94584ec0abfa4cf75bb7bfa2d38b87963f164d3b1053f98"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -214,11 +204,11 @@
     },
     {
       "type_name": "ondrejka_interface/srv/MyService_Event",
-      "hash_string": "RIHS01_6ba30936c3de4ebd192c5eb4c051a66376bd08e57d87e1397dacd45de447d755"
+      "hash_string": "RIHS01_57da5cd7641fea1ecf34ef5b25fefdd02557feba49102f41b45f5af2fc3a792d"
     },
     {
       "type_name": "ondrejka_interface/srv/MyService_Request",
-      "hash_string": "RIHS01_5d94a5dad8f4eedd5497d2ba563e712bc9bc658105d2b4938ec0fe12673b8651"
+      "hash_string": "RIHS01_0d3b86e086e8ef53c47fc5f54fadde701b36abda8fc9d03afffacd423454a69b"
     },
     {
       "type_name": "ondrejka_interface/srv/MyService_Response",

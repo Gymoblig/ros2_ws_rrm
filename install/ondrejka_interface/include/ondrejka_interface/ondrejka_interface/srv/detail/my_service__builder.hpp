@@ -43,29 +43,13 @@ private:
 class Init_MyService_Request_velocity
 {
 public:
-  explicit Init_MyService_Request_velocity(::ondrejka_interface::srv::MyService_Request & msg)
-  : msg_(msg)
+  Init_MyService_Request_velocity()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
   Init_MyService_Request_save velocity(::ondrejka_interface::srv::MyService_Request::_velocity_type arg)
   {
     msg_.velocity = std::move(arg);
     return Init_MyService_Request_save(msg_);
-  }
-
-private:
-  ::ondrejka_interface::srv::MyService_Request msg_;
-};
-
-class Init_MyService_Request_positions
-{
-public:
-  Init_MyService_Request_positions()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_MyService_Request_velocity positions(::ondrejka_interface::srv::MyService_Request::_positions_type arg)
-  {
-    msg_.positions = std::move(arg);
-    return Init_MyService_Request_velocity(msg_);
   }
 
 private:
@@ -83,7 +67,7 @@ template<>
 inline
 auto build<::ondrejka_interface::srv::MyService_Request>()
 {
-  return ondrejka_interface::srv::builder::Init_MyService_Request_positions();
+  return ondrejka_interface::srv::builder::Init_MyService_Request_velocity();
 }
 
 }  // namespace ondrejka_interface

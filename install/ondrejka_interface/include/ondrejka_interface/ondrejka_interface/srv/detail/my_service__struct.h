@@ -20,14 +20,9 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'positions'
-#include "rosidl_runtime_c/primitives_sequence.h"
-
 /// Struct defined in srv/MyService in the package ondrejka_interface.
 typedef struct ondrejka_interface__srv__MyService_Request
 {
-  rosidl_runtime_c__double__Sequence positions;
   double velocity;
   bool save;
 } ondrejka_interface__srv__MyService_Request;
