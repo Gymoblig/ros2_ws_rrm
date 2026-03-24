@@ -8,7 +8,7 @@
 #include <iomanip>
 
 /**
- * @brief External helper function for file operations.
+ * External helper function for file operations.
  * Complies with assignment requirements to keep file I/O logic separate from Teleop.
  */
 void write_to_trajectory_file(int id, const std::vector<double>& pos, double vel) {
