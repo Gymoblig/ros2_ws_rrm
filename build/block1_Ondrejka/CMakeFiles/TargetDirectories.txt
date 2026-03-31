@@ -2,6 +2,7 @@
 /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/block1_Ondrejka_uninstall.dir
 /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/teleop_node.dir
 /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/logger_node.dir
+/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/inverse_kinematics_node.dir
 /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/test.dir
 /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/edit_cache.dir
 /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/rebuild_cache.dir

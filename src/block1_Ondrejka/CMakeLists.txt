@@ -5,56 +5,75 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
+# 1. Nájdi všetky potrebné balíky
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rrm_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
 find_package(ondrejka_interface REQUIRED)
+find_package(Eigen3 REQUIRED)
 
+# --- Definícia spustiteľných súborov ---
 add_executable(teleop_node src/teleop_node.cpp)
 add_executable(logger_node src/logger_node.cpp)
+add_executable(inverse_kinematics_node src/inverse_kinematics_node.cpp) # PRIDANÉ
 
+# --- Include adresáre ---
 target_include_directories(teleop_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 
-
-target_include_directories( logger_node PUBLIC
+target_include_directories(logger_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
+  ${EIGEN3_INCLUDE_DIRS})
 
-target_compile_features(teleop_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-ament_target_dependencies(
-  teleop_node
+# Include pre IK node (Eigen je dobré mať aj tu pre prípadné maticové overenie)
+target_include_directories(inverse_kinematics_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
+  ${EIGEN3_INCLUDE_DIRS})
+
+# --- Závislosti (ament_target_dependencies) ---
+ament_target_dependencies(teleop_node
   "rclcpp"
   "rrm_msgs"
   "ondrejka_interface"
   "sensor_msgs"
 )
 
-target_compile_features(logger_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-ament_target_dependencies(
-  logger_node
+ament_target_dependencies(logger_node
   "rclcpp"
   "sensor_msgs"
+  "geometry_msgs"
+  "tf2_ros"
   "rrm_msgs"
   "ondrejka_interface"
 )
 
-install(TARGETS teleop_node logger_node
+# Závislosti pre IK node
+ament_target_dependencies(inverse_kinematics_node
+  "rclcpp"
+  "rrm_msgs"
+  "ondrejka_interface"
+)
+
+# --- Linkovanie knižníc ---
+target_link_libraries(logger_node Eigen3::Eigen)
+target_link_libraries(inverse_kinematics_node Eigen3::Eigen) # PRIDANÉ
+
+# --- Inštalácia ---
+# Pridali sme inverse_kinematics_node do zoznamu TARGETS
+install(TARGETS 
+  teleop_node 
+  logger_node 
+  inverse_kinematics_node
   DESTINATION lib/${PROJECT_NAME})
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+# Inštalácia launch súborov
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
 
 ament_package()

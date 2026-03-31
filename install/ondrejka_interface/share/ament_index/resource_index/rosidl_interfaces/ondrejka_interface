@@ -1,2 +1,4 @@
+srv/InverseKinematics.idl
+srv/InverseKinematics.srv
 srv/MyService.idl
 srv/MyService.srv

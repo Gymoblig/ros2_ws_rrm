@@ -223,6 +223,43 @@ logger_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_node.dir/build.make CMakeFiles/logger_node.dir/build
 .PHONY : logger_node/fast
 
+#=============================================================================
+# Target rules for targets named inverse_kinematics_node
+
+# Build rule for target.
+inverse_kinematics_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inverse_kinematics_node
+.PHONY : inverse_kinematics_node
+
+# fast build rule for target.
+inverse_kinematics_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/build
+.PHONY : inverse_kinematics_node/fast
+
+src/inverse_kinematics_node.o: src/inverse_kinematics_node.cpp.o
+.PHONY : src/inverse_kinematics_node.o
+
+# target to build an object file
+src/inverse_kinematics_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/src/inverse_kinematics_node.cpp.o
+.PHONY : src/inverse_kinematics_node.cpp.o
+
+src/inverse_kinematics_node.i: src/inverse_kinematics_node.cpp.i
+.PHONY : src/inverse_kinematics_node.i
+
+# target to preprocess a source file
+src/inverse_kinematics_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/src/inverse_kinematics_node.cpp.i
+.PHONY : src/inverse_kinematics_node.cpp.i
+
+src/inverse_kinematics_node.s: src/inverse_kinematics_node.cpp.s
+.PHONY : src/inverse_kinematics_node.s
+
+# target to generate assembly for a file
+src/inverse_kinematics_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/src/inverse_kinematics_node.cpp.s
+.PHONY : src/inverse_kinematics_node.cpp.s
+
 src/logger_node.o: src/logger_node.cpp.o
 .PHONY : src/logger_node.o
 
@@ -286,8 +323,12 @@ help:
 	@echo "... test"
 	@echo "... block1_Ondrejka_uninstall"
 	@echo "... uninstall"
+	@echo "... inverse_kinematics_node"
 	@echo "... logger_node"
 	@echo "... teleop_node"
+	@echo "... src/inverse_kinematics_node.o"
+	@echo "... src/inverse_kinematics_node.i"
+	@echo "... src/inverse_kinematics_node.s"
 	@echo "... src/logger_node.o"
 	@echo "... src/logger_node.i"
 	@echo "... src/logger_node.s"

@@ -91,6 +91,34 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka" TYPE EXECUTABLE FILES "/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/inverse_kinematics_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/greeny/ros2_ws_rrm/install/rrm_msgs/lib:/home/greeny/ros2_ws_rrm/install/ondrejka_interface/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/block1_Ondrejka/inverse_kinematics_node")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles/inverse_kinematics_node.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/block1_Ondrejka" TYPE DIRECTORY FILES "/home/greeny/ros2_ws_rrm/src/block1_Ondrejka/launch")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/block1_Ondrejka")
 endif()
 

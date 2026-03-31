@@ -1,5 +1,8 @@
 /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/teleop_node
 /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/logger_node
+/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/lib/block1_Ondrejka/inverse_kinematics_node
+/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/launch/excercise6.launch.xml
+/home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/launch/excercise6_inverse.launch.xml
 /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/package_run_dependencies/block1_Ondrejka
 /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/ament_index/resource_index/parent_prefix_path/block1_Ondrejka
 /home/greeny/ros2_ws_rrm/install/block1_Ondrejka/share/block1_Ondrejka/environment/ament_prefix_path.sh

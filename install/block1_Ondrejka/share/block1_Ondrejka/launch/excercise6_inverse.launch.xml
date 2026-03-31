@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find-pkg-share rrm_sim)/launch/rrm_sim.launch.xml" />
+
+    <node pkg="block1_Ondrejka" exec="logger_node" name="joint_logger" output="screen" 
+          launch-prefix="kitty --title 'LOGGER' sh -c 'clear; ros2 run block1_Ondrejka logger_node; exec bash'" />
+
+    <node pkg="block1_Ondrejka" exec="inverse_kinematics_node" name="ik_solver" output="screen" 
+          launch-prefix="kitty --title 'IK_SOLVER' sh -c 'clear; ros2 run block1_Ondrejka inverse_kinematics_node; exec bash'" />
+
+    <executable cmd="kitty --title 'COMMAND_CENTER' sh -c 'clear; echo -e &quot;\e[1;32mZadávaj príkazy tu:\e[0m&quot;; exec bash'" />
+</launch>

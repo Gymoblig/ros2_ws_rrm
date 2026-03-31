@@ -1,0 +1,39 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ondrejka_interface/srv/InverseKinematics.srv
+// generated code does not contain a copyright notice
+
+
+module ondrejka_interface {
+  module srv {
+    @verbatim (language="comment", text=
+      "REQUEST")
+    struct InverseKinematics_Request {
+      @verbatim (language="comment", text=
+        "Žiadaná súradnica X v metroch")
+      double x;
+
+      @verbatim (language="comment", text=
+        "Žiadaná súradnica Y v metroch")
+      double y;
+
+      @verbatim (language="comment", text=
+        "Žiadaná súradnica Z v metroch")
+      double z;
+    };
+    @verbatim (language="comment", text=
+      "RESPONSE")
+    struct InverseKinematics_Response {
+      @verbatim (language="comment", text=
+        "Či sa podarilo nájsť riešenie (či je bod v dosahu)")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "Voliteľné: vrátené vypočítané uhly q0, q1, q2")
+      sequence<double> angles;
+
+      @verbatim (language="comment", text=
+        "Informácia pre používateľa (\"OK\", \"Cieľ je príliš ďaleko\", atď.)")
+      string message;
+    };
+  };
+};

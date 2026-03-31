@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/greeny/ros2_ws_rrm/build/block1_Ondrejka
 # The main recursive "all" target.
 all: CMakeFiles/teleop_node.dir/all
 all: CMakeFiles/logger_node.dir/all
+all: CMakeFiles/inverse_kinematics_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/block1_Ondrejka_uninstall.dir/clean
 clean: CMakeFiles/teleop_node.dir/clean
 clean: CMakeFiles/logger_node.dir/clean
+clean: CMakeFiles/inverse_kinematics_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -137,7 +139,7 @@ CMakeFiles/block1_Ondrejka_uninstall.dir/clean:
 CMakeFiles/teleop_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_node.dir/build.make CMakeFiles/teleop_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_node.dir/build.make CMakeFiles/teleop_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles --progress-num=3,4 "Built target teleop_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles --progress-num=5,6 "Built target teleop_node"
 .PHONY : CMakeFiles/teleop_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -163,7 +165,7 @@ CMakeFiles/teleop_node.dir/clean:
 CMakeFiles/logger_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_node.dir/build.make CMakeFiles/logger_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_node.dir/build.make CMakeFiles/logger_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles --progress-num=1,2 "Built target logger_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles --progress-num=3,4 "Built target logger_node"
 .PHONY : CMakeFiles/logger_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +183,32 @@ logger_node: CMakeFiles/logger_node.dir/rule
 CMakeFiles/logger_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_node.dir/build.make CMakeFiles/logger_node.dir/clean
 .PHONY : CMakeFiles/logger_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/inverse_kinematics_node.dir
+
+# All Build rule for target.
+CMakeFiles/inverse_kinematics_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles --progress-num=1,2 "Built target inverse_kinematics_node"
+.PHONY : CMakeFiles/inverse_kinematics_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/inverse_kinematics_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/inverse_kinematics_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greeny/ros2_ws_rrm/build/block1_Ondrejka/CMakeFiles 0
+.PHONY : CMakeFiles/inverse_kinematics_node.dir/rule
+
+# Convenience name for target.
+inverse_kinematics_node: CMakeFiles/inverse_kinematics_node.dir/rule
+.PHONY : inverse_kinematics_node
+
+# clean rule for target.
+CMakeFiles/inverse_kinematics_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inverse_kinematics_node.dir/build.make CMakeFiles/inverse_kinematics_node.dir/clean
+.PHONY : CMakeFiles/inverse_kinematics_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

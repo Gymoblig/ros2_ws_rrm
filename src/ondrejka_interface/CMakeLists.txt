@@ -13,6 +13,7 @@ find_package(ament_cmake REQUIRED)
 find_package (rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces( ${PROJECT_NAME}
   "srv/MyService.srv"
+  "srv/InverseKinematics.srv"
   #DEPENDENCIES geometry_msgs # Ak chcete aby vase interfaces
   #pouzivali aj ine zavislosti
 )

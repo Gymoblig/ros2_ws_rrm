@@ -1,0 +1,10 @@
+# REQUEST
+float64 x        # Žiadaná súradnica X v metroch
+float64 y        # Žiadaná súradnica Y v metroch
+float64 z        # Žiadaná súradnica Z v metroch
+
+---
+# RESPONSE
+bool success     # Či sa podarilo nájsť riešenie (či je bod v dosahu)
+float64[] angles # Voliteľné: vrátené vypočítané uhly q0, q1, q2
+string message   # Informácia pre používateľa ("OK", "Cieľ je príliš ďaleko", atď.)
