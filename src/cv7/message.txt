@@ -1,0 +1,167 @@
+#include "block1_kral/solver.hpp"
+
+
+Solver::Solver(): Node("IK_solver_node")
+{   
+    IK_service_ = this->create_service<kral_interface::srv::IKpositions>(
+        "solve_ik",
+        bind(&Solver::IK_solver_callback, this,
+                std::placeholders::_1, std::placeholders::_2));
+    
+    best_service_ = this->create_service<kral_interface::srv::Bestposition>(
+        "find_best",
+        bind(&Solver::bestServiceCallback, this,
+                std::placeholders::_1, std::placeholders::_2));
+
+    joint_client_ = std::make_shared<rclcpp::SyncParametersClient>(
+        this,"/robot_state_publisher");
+    
+    if (!joint_client_->wait_for_service(2s))
+    {
+        RCLCPP_ERROR(this->get_logger(),
+        "Parameter service /robot_state_publisher is not available.");
+        return;
+    }
+
+    this->joint_params_ = joint_client_->get_parameters({"robot_description"});
+    if (joint_params_.empty())
+    {
+        RCLCPP_ERROR(this->get_logger(),
+        "Parameters are empty.");
+        return;
+    }
+    this->joint_limits_ = loadJointLimits(this->joint_params_);
+}
+void Solver::bestServiceCallback(const shared_ptr<kral_interface::srv::Bestposition::Request> request,
+            shared_ptr<kral_interface::srv::Bestposition::Response> response)
+{   
+    double shortest_distance {10000}; // big num
+    double distance {};
+    double cur0 = normalizeAngle(request->current_positions[0]);
+    double cur1 = normalizeAngle(request->current_positions[1]);
+    double cur2 = normalizeAngle(request->current_positions[2]);
+    vector<double> best_solution(3);
+    double new0 {}, new1 {}, new2 {};
+    for(size_t i=0;i < request->solutions.size();i++)
+    {   
+        new0 = request->solutions[i].joint_positions[0];
+        new1= request->solutions[i].joint_positions[1];
+        new2 = request->solutions[i].joint_positions[2];
+        distance = sqrt(pow(cur0 - new0,2) + pow(cur1-new1,2) + pow(cur2-new2,2));
+        if (distance < shortest_distance) 
+        {
+            shortest_distance = distance;
+            best_solution = {new0, new1, new2};
+        }
+    }
+    response->best_solution = best_solution;
+}
+double Solver::normalizeGoneometricInterval(double x)
+{
+    return max(-1.0, min(1.0, x));
+}
+
+double Solver::normalizeAngle(double angle)
+{
+    return atan2(sin(angle),cos(angle));  // return <-pi,pi>
+}
+bool Solver::checkLegitJoints(const vector<double>& sol)
+{
+    for (int i = 0;i < 3;i++)
+    {
+        //stavim sa ze do zajtra zabudnem ako som to indexoval, ale ide to
+        if (this->joint_limits_.at((i)*2) > sol.at(i) || sol.at(i) > this->joint_limits_.at(i*2+1)) return false; 
+    }
+    return true;
+}
+void Solver::IK_solver_callback( const shared_ptr<kral_interface::srv::IKpositions::Request> request,
+            shared_ptr<kral_interface::srv::IKpositions::Response> response)
+{   
+    double x = request->positions[0];
+    double y = request->positions[1];
+    double z = request-> positions[2];
+    double L2 {0.203};
+
+    
+    
+    // helper
+    double L = sqrt(pow(x,2) + pow(y,2));
+    double alpha = atan2(z,L);
+    double E = sqrt(pow(z,2) + pow(L,2));
+    double beta = acos(normalizeGoneometricInterval(pow(E,2)/(2*E*L2))); // L2 = L3 = 0.203
+    double gamma = acos(normalizeGoneometricInterval((2*pow(L2,2) - pow(E,2))/(2*L2*L2)));
+    if (E > 2*L2 || E < 0 ) {
+        RCLCPP_WARN(this->get_logger(), "Target [%.2f, %.2f, %.2f] is OUT OF REACH (E=%.3f)", x, y, z, E);
+        response->result = false;
+        return;
+    }
+    //Theta
+    double theta1    = normalizeAngle(atan2(y,x));
+    double theta1_2  = normalizeAngle(M_PI + theta1);
+    double theta2    = normalizeAngle(M_PI_2 - (alpha + beta));
+    double theta2_2  = normalizeAngle(M_PI_2 - (alpha - beta));  
+    double theta3    = normalizeAngle(M_PI - gamma); // theta3' = -theta3
+    double theta3_2  = normalizeAngle(-theta3);
+    
+    // all possible solutions (4)
+    // if theta1' is used, theta2 and theta3 has negative value
+    // 1: theta1, theta2, theta3
+    // 2: theta1, theta2', theta3'(-theta3) -- line 68
+    // 3: theta1', -theta2, -theta3
+    // 4: theta1', -theta2', -theta3'(theta3) -- line 68
+    
+    Eigen::MatrixXd solutions(4,3);
+    solutions << theta1, theta2, theta3,
+                 theta1, theta2_2, theta3_2,
+                 theta1_2, normalizeAngle(-theta2), normalizeAngle(-theta3),
+                 theta1_2, normalizeAngle(-theta2_2), theta3;
+    
+    for (int i = 0; i < solutions.rows(); i++)
+    {
+        
+        if (!checkLegitJoints({solutions(i,0),solutions(i,1),solutions(i,2)})) continue;
+        kral_interface::msg::IKresult msg;  
+        msg.joint_positions[0] = solutions(i,0);
+        msg.joint_positions[1] = solutions(i,1);
+        msg.joint_positions[2] = solutions(i,2);
+        response->solutions.push_back(msg);
+    }
+    response->result = true;
+    RCLCPP_INFO(this->get_logger(), "IK calculated.\n");
+}
+vector<double> Solver::loadJointLimits(const vector<rclcpp::Parameter>& params)
+{
+    if (params.empty())
+        {
+            RCLCPP_ERROR(this->get_logger(),
+            "Parameters are empty.");
+            return {};
+        }
+
+     // we need to parse the string as URDF model
+    string urdf_xml = params[0].as_string(); 
+    urdf::Model model;
+
+    model.initString(urdf_xml);
+    auto joint0 = model.getJoint("joint_1");
+    auto joint1 = model.getJoint("joint_2");
+    auto joint2 = model.getJoint("joint_3");
+
+    auto joint0_lower_limit = joint0->limits->lower;
+    auto joint0_upper_limit = joint0->limits->upper;
+    auto joint1_lower_limit = joint1->limits->lower;
+    auto joint1_upper_limit = joint1->limits->upper;
+    auto joint2_lower_limit = joint2->limits->lower;
+    auto joint2_upper_limit = joint2->limits->upper;
+
+    vector<double> limits = {joint0_lower_limit, joint0_upper_limit,
+                             joint1_lower_limit, joint1_upper_limit,
+                             joint2_lower_limit, joint2_upper_limit
+                            };
+    return limits;
+}
+
+
+    
+
+

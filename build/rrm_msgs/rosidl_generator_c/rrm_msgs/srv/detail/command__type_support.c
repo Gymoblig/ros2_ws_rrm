@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rrm_msgs/srv/detail/command__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "rrm_msgs/srv/detail/command__functions.h"
 #include "rrm_msgs/srv/detail/command__type_support.h"
+#include "rrm_msgs/srv/detail/command__struct.h"
+#include "rrm_msgs/srv/detail/command__functions.h"
 
 #ifdef __cplusplus
 extern "C"

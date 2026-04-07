@@ -1,0 +1,12 @@
+<launch>
+    <include file="$(find-pkg-share rrm_sim)/launch/rrm_sim.launch.xml" />
+
+    <node pkg="block1_ondrejka" exec="logger_node" name="joint_logger" output="screen" 
+          launch-prefix="kitty --title 'LOGGER' sh -c" />
+
+    <node pkg="block1_ondrejka" exec="inverse_kinematics_node" name="ik_solver" output="screen" 
+          launch-prefix="kitty --title 'IK_SOLVER' sh -c" />
+
+    <node pkg="block1_ondrejka" exec="motion_manager_node" name="motion_manager" output="screen" 
+          launch-prefix="kitty --title 'Filharmonia' sh -c" />
+</launch>
